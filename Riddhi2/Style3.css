@@ -1,0 +1,64 @@
+body{
+background: url(360_F_413108797_bJDklqcnc86T5bC3GTJ2jx3QOQIStVHK.jpg);
+background-repeat: no-repeat;
+height: 100vh;
+background-size: cover;
+}
+h3{
+    color:black;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    margin-top: -400px;
+    margin-left: 600px;
+    width: 700px;
+}
+button{
+    background-color: red;
+    margin-left: 850px;
+    color: black;
+    border-radius: 14px;
+}
+
+div {
+    position: absolute;
+    pointer-events: none;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+    animation: fadeInOut 2s linear infinite;
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(cherry-blossom.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: move 2s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(300px) rotate(360deg);
+    }
+}
+
+@keyframes fadeInOut {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    20%,
+    80% {
+        opacity: 1;
+    }
+}
